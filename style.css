@@ -1,7 +1,18 @@
+:root{
+  --bg-color: black;
+  --text-color: white;
+}
+
+.light-theme{
+  --bg-color: white;
+  --text-color: black;
+}
+
 body {
-  background-color: black;
-  color: white;
+  background-color: var(--bg-color);
+  color: var(--text-color);
   font-family: arial;
+  transition: 0.5s;
 }
 
 .title {
@@ -11,13 +22,13 @@ body {
 
 .move-icon {
   height: 50px;
-  background-color: black;
+  background-color: var(--bg-color);
   border-radius: 50%;
 }
 
 .move-button {
   background-color: transparent;
-  border: 5px solid white;
+  border: 5px solid var(--text-color);
   border-radius: 50%;
   width: 100px;
   height: 100px;
@@ -35,8 +46,8 @@ body {
   margin-top: 60px;
 }
 
-.reset-score-buttton{
-  background-color: white;
+.button-2{
+  /* background-color: var(--text-color); */
   border:none;
   font-size: 15px;
   padding: 8px 15px;
